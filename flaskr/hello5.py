@@ -1,4 +1,4 @@
-# app.route : 중복 라우팅
+## app.route : 중복 라우팅
 # 여러 개의 라우팅을 하나의 함수에 연결해서 동일한 처리
 import datetime
 from flask import Flask

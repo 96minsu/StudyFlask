@@ -1,9 +1,18 @@
-from flask import Flask
+
+## make_response
+# response를 만들기 위해 make_response 함수를 처리
+from flask import Flask, session, request, redirect, url_for, \make_response
+
+print("name: ", __name__)
 
 app = Flask(__name__)
 
+#set the secret key. Keep this really secret:
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+
 def index():
-    return "Hello, World!!!!!!!"
+    response = make_response("<h1>Hello, World!!!!!!! </h1>")
+    return response
 
 app.add_url_rule('/', 'index', index)
 
