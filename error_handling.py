@@ -4,7 +4,7 @@
 # 에러 catch 처리
 @app.errorhandler(403)
 def page_forbidden(error):
-    print 'Hey ! You are not allowed to acces this !'
+    print 'Hey ! You are not allowed to access this !'
 
 @app.errorhandler(403)
 def page_not_found(error):

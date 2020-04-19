@@ -1,4 +1,3 @@
-# writefile flaskr/json_2.py
 # 에러를 abort로 throw하기
 from flask import Flask, abort, jsonify, make_response
 
