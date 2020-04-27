@@ -1,0 +1,23 @@
+
+## 변수에 값 세팅 : 템플릿에 값세팅
+# {% set 변수명=값 %}으로 변수에 값세팅
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Hello world!</h1>
+        {% set the_date = "2020-04-26" %}
+        {% set numbers = [0, 1, 2, 3] %}
+        <p>Today is <strong>{{ the_date }}</strong> and it is a great day!</p>
+        
+        <h2>Let's count!</h2>
+        
+        {% for n in numbers %}
+            <div>{{ n }} bottles of soy.</div>
+        {% endfor %}
+        
+        <p>Done counting!</p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+## 템플릿 : 필터 지정
+# 템플릿에 변수명 다음에  | 를 지정하고 그 다음에 필터를 지정
+
+# capitlize / title : 첫번째 문자를 대문자로 만들고 나머지는 소문자 / 각 단어를 capitalize 처리
+<h1>Hello, {{ name | capitalize }} </h1>
+<h1>Hello, {{ name | title }} </h1>
+
+# lower / upper : 전체를 소문자로 처리 / 전체를 대문자로 처리
+<h1>Hello, {{ name | lower }} </h1>
+<h1>Hello, {{ name | upper }} </h1>
+
+# safe : 이스케이프를 적용하지 않고 값을 렌더링
+<h1>Hello, {{ name | safe }} </h1>
+
+# striptags : 렌더링 하기전에 html 태그 제거
+<h1>Hello, {{ name | striptags }} </h1>
+
+# trim : 앞과 뒷부분을 공백문자 제거
+<h1>Hello, {{ name | trim }} </h1>
