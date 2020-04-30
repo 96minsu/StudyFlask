@@ -1,0 +1,10 @@
+
+<body>
+    <h1> variable {{status}}</h1>
+    {% for status in range(2) %}
+        {% include 'include.html' %}
+    {% endfor %}
+    <div class="container">
+        <h1> include test {{status}}</h1>
+    </div>
+</body>

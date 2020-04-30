@@ -1,0 +1,18 @@
+
+## 템플릿 : 기본 html 작성
+# 표준이 되는 기본 html 작성
+<!doctype html>
+<head>
+    {% block head %}
+    <title>
+        {% block title %}
+        {% endblock %}
+        My Main Title
+    </title>
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

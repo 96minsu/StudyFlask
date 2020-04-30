@@ -1,0 +1,11 @@
+
+## 템플릿 : 상속 html 작성
+# extends로 기본 html을 상속 받아서 각 block에 tags를 채움
+{% extends "layout.html" %}
+{% block title %} Index {% endblock %}
+{% block head %}
+    <style></style>
+{% endblock %}
+{% block body %}
+    <h1> Hello World !!!</h1>
+{% endblock %}

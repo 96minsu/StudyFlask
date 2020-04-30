@@ -1,0 +1,12 @@
+
+## 템플릿 : html 분리
+# Include시 변수 등이 존재할 경우 context가 달라 변수값이 실행이 되지 않으므로 context를 맞춰줘야 함
+<ul class="nav navbar-nav navbar-right">
+    <li>
+        {% if status == 0 %}
+            <a href="/login">Login</a>
+        {% else %}
+            <a href="/login">Logout</a>
+        {%endif%}
+    </li>
+</ul>
