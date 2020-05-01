@@ -1,0 +1,10 @@
+
+## Login html form 작성
+# Action은 login에서 같이 처리하도록 url_for(함수명)으로 호출해서 URL를 세팅
+<form name="login" method="post" action='{{url_for('login')}}'>
+    <label>Email</lable>
+        <input type='text' name ='email' maxlength="254"/>
+    <label>Password</label>
+        <input type='password' name='password' />
+    <button type='submit'>Enter</button>
+</form>

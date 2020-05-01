@@ -1,0 +1,18 @@
+
+## 템플릿 : login html 작성
+# 표준이 되는 기본 html 작성
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Sign In</h1>
+    <form action="/loginform" method="post" name="login">
+        {{ form.hidden_tag() }}
+        <p>
+            Please enter your OpenID:<br>
+            {{ form.openid(size=80) }}<br>
+        </p>
+        <p>{{ form.remember_me }} Remember Me</p>
+        <p><input type="submit" value="Sign In"></p>
+    </form>
+{% endblock %}

@@ -1,18 +1,15 @@
 
-## make_response
-# response를 만들기 위해 make_response 함수를 처리
-from flask import Flask, session, request, redirect, url_for, \make_response
-
-print("name: ", __name__)
+## Login 처리 예시
+# Login 함수에서 get(send data 요청)과 post(요청 데이터를 받음) 메소드를 처리
+from flask import Flask, session, request, redirect, url_for
 
 app = Flask(__name__)
 
-#set the secret key. Keep this really secret:
-app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+# set the secret key. keep this really secret:
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/, ?RT'
 
 def index():
-    response = make_response("<h1>Hello, World!!!!!!! </h1>")
-    return response
+    return "Hello, World!!!!!!"
 
 app.add_url_rule('/', 'index', index)
 
@@ -27,7 +24,6 @@ def login():
             <p><input type=submit value=Login>
         </form>
     '''
-print(app.url_map)
-            
-if __name__ == '__main__':
+
+if __ name__ == '__main__':
     app.run(debug=True)
